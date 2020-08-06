@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasWorkflow=true" audit="true" create_roles="catalog_admin" extends="task" label="要求アイテム" max_length="40" name="sc_req_item" sizeclass="3" text_index="true" type="collection">
+        <element choice="1" label="fffffffffffffffffffffffffffffffffffffffffff" max_length="40" name="x_58872_needit_fffffffffffffffffffffffffffffffffffffffffff" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>ui_choicelist2</name>
+        <scoped_name>x_58872_needit_ui_choicelist2</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-31 08:09:18</sys_created_on>
+        <sys_id>4172051edb9a9010dbb97b60399619a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ui_choicelist2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_macro_4172051edb9a9010dbb97b60399619a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-31 08:13:15</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="true" xmlns:j="jelly:core" xmlns:g="glide">
+     <g:macro name="" table="" field="" />
+     <g:evaluate var="jvar_not_important" expression="var cl = GlideScriptChoiceList.getChoiceList('${jvar_table}', '${jvar_field}');" />
+     <g:evaluate var="jvar_usename" expression="('${jvar_name}'=='')?'${jvar_field}':'${jvar_name}'" />
+     <select id="${jvar_usename}" name="${jvar_usename}">
+          <g:options choiceList="${cl}" />
+     </select>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>3098f443db74fb0042b321c405961935</instance_id>
+        <instance_name>dev81786</instance_name>
+        <name>sys_ui_macro_4172051edb9a9010dbb97b60399619a6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description/&gt;&lt;media_type/&gt;&lt;name&gt;ui_choicelist2&lt;/name&gt;&lt;scoped_name&gt;x_58872_needit_ui_choicelist2&lt;/scoped_name&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-31 08:09:18&lt;/sys_created_on&gt;&lt;sys_id&gt;4172051edb9a9010dbb97b60399619a6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;ui_choicelist2&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_4172051edb9a9010dbb97b60399619a6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-31 08:13:15&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="true" xmlns:j="jelly:core" xmlns:g="glide"&gt;
+     &lt;g:macro name="" table="" field="" /&gt;
+     &lt;g:evaluate var="jvar_not_important" expression="var cl = GlideScriptChoiceList.getChoiceList('${jvar_table}', '${jvar_field}');" /&gt;
+     &lt;g:evaluate var="jvar_usename" expression="('${jvar_name}'=='')?'${jvar_field}':'${jvar_name}'" /&gt;
+     &lt;select id="${jvar_usename}" name="${jvar_usename}"&gt;
+          &lt;g:options choiceList="${cl}" /&gt;
+     &lt;/select&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1630234544</payload_hash>
+        <record_name>ui_choicelist2</record_name>
+        <reverted_from/>
+        <source>42aaf3c0db121010dbb97b6039961951</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-31 08:13:15</sys_created_on>
+        <sys_id>d0c3c95edb9a9010dbb97b60399619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173a3eeadd20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-31 08:13:15</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>d8c3c95e3d9a9010b955f56181cfb3ae</update_guid>
+        <update_guid_history>d8c3c95e3d9a9010b955f56181cfb3ae:1630234544,a2d2415ed29a901060e595e713e5d155:-337418958</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-31 08:15:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>56fc7946beb04268aa7953cd9adf4e40</sys_id>
+        <sys_metadata>4172051edb9a9010dbb97b60399619a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ui_choicelist2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_4172051edb9a9010dbb97b60399619a6</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_4172051edb9a9010dbb97b60399619a6">d0c3c95edb9a9010dbb97b60399619af</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-31 08:15:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

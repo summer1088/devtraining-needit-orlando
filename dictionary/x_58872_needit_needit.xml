@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="16" type="collection">
+        <element choice="1" label="Choicetest" max_length="40" name="choicetest" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="いいえ" value="0"/>
+                <element inactive_on_update="false" label="はい" value="1"/>
+            </choice>
+        </element>
+        <element label="filetest" max_length="40" name="filetest" type="file_attachment"/>
+        <element attributes="field_decorations=test2" label="Inttest" max_length="40" name="inttest" type="integer"/>
+        <element label="Stringtest" max_length="1000" name="stringtest" type="boolean"/>
+        <element label="押印部数が、申請部数と一致していることを確認済み。" max_length="40" name="u_check1" type="boolean"/>
+        <element label="名義人もしくは会社印の押印箇所へ、押印していることを確認済み。" max_length="40" name="u_check2" type="boolean"/>
+        <element label="印紙へ押印していることを確認済み。（該当しない場合は×を記入）" max_length="40" name="u_check3" type="boolean"/>
+        <element label="テープで製本した箇所へ、押印したことを確認済み。（該当しない場合は×を記入）" max_length="40" name="u_check4" type="boolean"/>
+        <element label="html" max_length="8000" name="u_html" type="html"/>
+        <element display="true" label="listuser" max_length="4000" name="u_listuser" reference="sys_user" type="glide_list"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
-        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" reference_qual="javascript:&quot;department=&quot; +current.assigned_to.department" type="reference" use_reference_qualifier="advanced"/>
         <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
@@ -11,7 +26,8 @@
                 <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="hr1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+        <element default="true" label="test2" max_length="40" name="u_test2" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true&#13;&#10;field_decorations=testURL" choice="3" default="hr1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="hr1"/>
                 <element inactive="true" inactive_on_update="true" label="Your Department Choice 1" sequence="0" value="your_choice1"/>

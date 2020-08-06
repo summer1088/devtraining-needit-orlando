@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>test2</name>
+        <scoped_name>x_58872_needit_test2</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-28 15:12:24</sys_created_on>
+        <sys_id>fdd6cfd1db1a1010dbb97b6039961980</sys_id>
+        <sys_mod_count>121</sys_mod_count>
+        <sys_name>test2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_macro_fdd6cfd1db1a1010dbb97b6039961980</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-03 06:48:16</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+
+	<section>
+		<h3>返却前チェック欄</h3>
+	<table style="margin-left:2em">
+			<tr><td>	
+			  <g:ui_checkbox name="x_58872_needit_needit.u_check1" value="$[current.u_check1]"/>
+		 押印部数が、申請部数と一致していることを確認済み。
+    </td> </tr>
+			<tr><td>		  
+			  <g:ui_checkbox name="x_58872_needit_needit.u_check2" value="$[current.u_check2]"/>
+		 名義人もしくは会社印の押印箇所へ、押印していることを確認済み。
+    </td> </tr>
+			<tr><td>		  
+			  <g:ui_checkbox name="x_58872_needit_needit.u_check3" value="$[current.u_check3]"/>
+		 印紙へ押印していることを確認済み。（該当しない場合は×を記入）。
+    </td> </tr>
+			<tr><td>		  
+			  <g:ui_checkbox name="x_58872_needit_needit.u_check4" value="$[current.u_check4]"/>
+		 テープで製本した箇所へ、押印したことを確認済み。（該当しない場合は×を記入）。
+    </td> </tr>
+    </table>
+		
+	</section>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

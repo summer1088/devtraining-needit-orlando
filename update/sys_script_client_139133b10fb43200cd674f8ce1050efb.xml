@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
@@ -12,7 +12,20 @@
         <order/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
-   alert("Thank you for loading the NeedIt form.   When you close this alert you will be able to interact with the form.");
+   //alert("Thank you for loading the NeedIt form.   When you close this alert you will be able to interact with the form.");
+	g_form.setVisible('u_check1',false);
+	g_form.setValue('u_check1',g_form.getValue('u_check1'));
+	g_form.setVisible('u_check1',false);
+	g_form.setValue('u_check2',g_form.getValue('u_check2'));
+	g_form.setVisible('u_check2',false);
+	g_form.setValue('u_check3',g_form.getValue('u_check3'));
+	g_form.setVisible('u_check3',false);
+	g_form.setValue('u_check4',g_form.getValue('u_check4'));
+	g_form.setVisible('u_check4',false);
+	//g_form.setValue('active',g_form.getValue('active'));
+	//g_form.setVisible('active',false);
+	//g_form.setReadOnly('u_check1',true);
+
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -20,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>139133b10fb43200cd674f8ce1050efb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>NeedIt onLoad Example</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -28,7 +41,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_139133b10fb43200cd674f8ce1050efb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-02-08 21:12:51</sys_updated_on>
+        <sys_updated_on>2020-08-04 01:24:04</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
